@@ -1,0 +1,24 @@
+{
+  "name": "Friend-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liangbryan2/Friend-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liangbryan2/Friend-finder/issues"
+  },
+  "homepage": "https://github.com/liangbryan2/Friend-finder#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
