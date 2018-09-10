@@ -43,6 +43,9 @@ $(document).ready(function () {
             $("#myBtn").removeClass("hidden");
             $("#match").append(`<p>${friend.name}</p></p><img src ='${friend.photo}'></p>`);
             modal.css("display", "block");
+            $.post("/api/friends", current).then(function (data) {
+                console.log(data);
+            });
             return friend;
         });
     }
@@ -54,11 +57,8 @@ $(document).ready(function () {
             photo: $("#photoLink").val().trim(),
             scores: [$("#q1answer").val(), $("#q2answer").val(), $("#q3answer").val(), $("#q4answer").val(), $("#q5answer").val(), $("#q6answer").val(), $("#q7answer").val(), $("#q8answer").val(), $("#q9answer").val(), $("#q10answer").val()]
         };
-        console.log(current);
+        // console.log(current);
         compare(current);
-        $.post("/api/friends", current).then(function (data) {
-            console.log(data);
-        });
     });
 
 
