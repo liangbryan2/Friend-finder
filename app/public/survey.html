@@ -11,13 +11,8 @@
 </head>
 
 <body>
-    <!-- Trigger/Open The Modal -->
-    <button id="myBtn">Show Friend</button>
 
-    <!-- The Modal -->
     <div id="myModal" class="modal">
-
-        <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
                 <span class="close">&times;</span>
@@ -34,8 +29,9 @@
 
     </div>
     <div id="survey">
-        <h1>Fill out the survey to match with a friend.</h1>
-        <form id="addFriend">
+        <h1 id="surveyHead">Fill out the survey to match with a friend.</h1>
+        <button id="myBtn" class="hidden green">Show Friend</button>
+        <form id="addFriend" class="scroll1">
             Name<br>
             <input type="text" id="name" required>
             <br>
@@ -144,7 +140,7 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
             <br>
-            <input type="submit">
+            <input type="submit" class="green" id="surveySubmit">
         </form>
     </div>
 

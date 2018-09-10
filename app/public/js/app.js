@@ -1,26 +1,18 @@
 $(document).ready(function () {
-    // Get the modal
-    var modal = $("#myModal");
-    // console.log(modal[0]);
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
 
-    // Get the <span> element that closes the modal
+    var modal = $("#myModal");
+    var btn = document.getElementById("myBtn");
     var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks the button, open the modal 
     btn.onclick = function () {
         modal.css("display", "block");
     }
 
-    // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
         modal.css("display", "none");
     }
 
-    // When the user clicks anywhere outside of the modal, close it
     $(window).on("click", (function (event) {
-        // console.log(event.target);
         if (event.target == modal[0]) {
             modal.css("display", "none");
         }
@@ -47,7 +39,8 @@ $(document).ready(function () {
             }
             console.log(lowest);
             console.log(friend);
-            $("#myBtn").css("display", "block");
+            $("#addFriend").addClass("hidden");
+            $("#myBtn").removeClass("hidden");
             $("#match").append(`<p>${friend.name}</p></p><img src ='${friend.photo}'></p>`);
             modal.css("display", "block");
             return friend;
@@ -56,7 +49,6 @@ $(document).ready(function () {
 
     $(document).on("submit", "#addFriend", function (e) {
         e.preventDefault();
-        $("#survey").css("display", "none");
         var current = {
             name: $("#name").val().trim(),
             photo: $("#photoLink").val().trim(),
