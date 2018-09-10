@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Survey</title>
+</head>
+
+<body>
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Show Friend</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Matched Friend</h2>
+            </div>
+            <div id="match" class="modal-body">
+                <p>Test</p>
+                <img src="https://vignette.wikia.nocookie.net/spongebob/images/a/ac/Spongebobwithglasses.jpeg/revision/latest?cb=20121014113150">
+            </div>
+            <div class="modal-footer">
+                <h3></h3>
+            </div>
+        </div>
+
+    </div>
+    <div id="survey">
+        <h1>Fill out the survey to match with a friend.</h1>
+        <form id="addFriend">
+            Name<br>
+            <input type="text" id="name" required>
+            <br>
+            Link to Photo Image<br>
+            <input type="text" id="photoLink" required>
+            <br>
+            <h3>Question 1</h3>
+            <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+            <select name="q1" id="q1answer" required>
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 2</h3>
+            <p>Generally speaking, you rely more on your experience than your imagination.</p>
+            <select name="q2" id="q2answer" required>
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 3</h3>
+            <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
+            <select name="q3" id="q3answer" required>
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 4</h3>
+            <p>You rarely do something just out of sheer curiosity.</p>
+            <select name="q4" id="q4answer" required>
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 5</h3>
+            <p>People can rarely upset you.</p>
+            <select name="q5" id="q5answer" required>
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 6</h3>
+            <p>It is often difficult for you to relate to other people’s feelings.</p>
+            <select name="q6" id="q6answer" required>
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 7</h3>
+            <p>In a discussion, truth should be more important than people’s sensitivities.</p>
+            <select name="q7" id="q7answer" required>
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 8</h3>
+            <p>You rarely get carried away by fantasies and ideas.</p>
+            <select name="q8" id="q8answer" required>
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 9</h3>
+            <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or
+                not.</p>
+            <select name="q9" id="q9answer" required>
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <h3>Question 10</h3>
+            <p>You feel more energetic after spending time with a group of people.</p>
+            <select name="q10" id="q10answer" required>
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <input type="submit">
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
