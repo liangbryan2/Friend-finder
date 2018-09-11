@@ -1,6 +1,6 @@
 # [Friend Finder](https://friendfinderbl2.herokuapp.com/)
 Complete a short survey to find your new best friend!
-![friendfinder](friendfinder.png)
+![friendfinder](./friendfinder.png)
 
 ## Getting Started
 Friend finder is a full stack website that allows users to find their new friend by filling out a 10 question survey.
